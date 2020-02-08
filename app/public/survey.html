@@ -5,8 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey</title>
+    <!-- bootstrap and jquery -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Survey</h1>
+    <div class="container">
+      <h1>Survey Questions</h1>
+      <hr />
+      <form>
+        <h3>About You</h3>
+        <div class="form-group">
+          <label for="name">Name (Required)</label>
+          <input type="name" class="form-control" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="linkToPhoto">Link to Photo Image (Required)</label>
+          <input type="linkToPhoto" class="form-control" id="linkToPhoto" />
+        </div>
+        <hr />
+        <h3>Question 1</h3>
+        <div class="form-group">
+          <label for="q1"
+            >Your mind is always buzzing with unexplored ideas and plans.</label
+          >
+          <select class="form-control" id="1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 2</h3>
+        <div class="form-group">
+          <label for="q2"
+            >Generally speaking, you rely more on your experience than your
+            imagination.</label
+          >
+          <select class="form-control" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 3</h3>
+        <div class="form-group">
+          <label for="q3"
+            >You find it easy to stay relaxed and focused even when there is
+            some pressure.</label
+          >
+          <select class="form-control" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 4</h3>
+        <div class="form-group">
+          <label for="q4"
+            >You rarely do something just out of sheer curiosity.</label
+          >
+          <select class="form-control" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 5</h3>
+        <div class="form-group">
+          <label for="q5">People can rarely upset you.</label>
+          <select class="form-control" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 6</h3>
+        <div class="form-group">
+          <label for="q6"
+            >It is often difficult for you to relate to other people’s
+            feelings.</label
+          >
+          <select class="form-control" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 7</h3>
+        <div class="form-group">
+          <label for="q7"
+            >In a discussion, truth should be more important than people’s
+            sensitivities.</label
+          >
+          <select class="form-control" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 8</h3>
+        <div class="form-group">
+          <label for="q8"
+            >You rarely get carried away by fantasies and ideas.</label
+          >
+          <select class="form-control" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 9</h3>
+        <div class="form-group">
+          <label for="q9"
+            >You think that everyone’s views should be respected regardless of
+            whether they are supported by facts or not.</label
+          >
+          <select class="form-control" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <h3>Question 10</h3>
+        <div class="form-group">
+          <label for="q10"
+            >You feel more energetic after spending time with a group of
+            people.</label
+          >
+          <select class="form-control" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <button
+          id="submit"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Submit
+        </button>
+      </form>
+      <br />
+      <footer>
+        <div class="container">
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/huanyang51/friend-finder">Github Repo</a>
+        </div>
+      </footer>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Your Most Compatible Friend is
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script>
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      var user = {
+        name: $("#name").val(),
+        photo: $("#linkToPhoto").val(),
+        scores: [
+          $("#q1").val() || 0,
+          $("#q2").val() || 0,
+          $("#q3").val() || 0,
+          $("#q4").val() || 0,
+          $("#q5").val() || 0,
+          $("#q6").val() || 0,
+          $("#q7").val() || 0,
+          $("#q8").val() || 0,
+          $("#q9").val() || 0,
+          $("#q10").val() || 0
+        ]
+      };
+      console.log(user);
+    });
+  </script>
 </html>
