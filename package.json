@@ -20,6 +20,7 @@
   "homepage": "https://github.com/huanyang51/friend-finder#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "morgan": "^1.9.1",
     "path": "^0.12.7"
   }
 }

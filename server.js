@@ -1,13 +1,15 @@
 var express = require("express");
-var path = require("path");
 var app = express();
 
-var { htmlRoutes } = require("./app/routing/htmlRoutes");
-var { apiRoutes } = require("./app/routing/apiRoutes");
+const morgan = require("morgan");
+var PORT = 8080;
 var { db } = require("./app/data/friends");
-console.log(db.friends);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-htmlRoutes(app, path);
-apiRoutes(app, db);
-app.listen(3005, () => console.log("[starting server] localhost:3005"));
+app.use(morgan("dev"));
+app.use(require("./app/routing/htmlRoutes"));
+app.use("/api", require("./app/routing/apiRoutes"));
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`server running on ${process.env.PORT || PORT}`);
+});
