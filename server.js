@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(require("./app/routing/htmlRoutes"));
-app.use("/api", require("./app/routing/apiRoutes"));
+app.use("/api/friends", require("./app/routing/apiRoutes"));
 app.listen(process.env.PORT || PORT, () => {
   console.log(`server running on ${process.env.PORT || PORT}`);
 });
