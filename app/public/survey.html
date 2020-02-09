@@ -256,7 +256,7 @@
         for (var i = 0; i < data.friends.length; i++) {
           var name = $("<h5>").append(data.friends[i].name);
           var photo = $("<div>").append(
-            `<a href = ${data.friends[i].photo}>Photo</a>`
+            `<img src="${data.friends[i].photo}" alt="Profile Image">`
           );
           $(".modal-body").append(name);
           $(".modal-body").append(photo);
