@@ -227,7 +227,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -253,9 +252,15 @@
           $("#q10").val() || 0
         ]
       };
-      console.log(user);
-      $.post("/api/friends", user).done(function(friend) {
-        console.log(friend);
+      $.post("/api/friends", user).done(function(data) {
+        for (var i = 0; i < data.friends.length; i++) {
+          var name = $("<h5>").append(data.friends[i].name);
+          var photo = $("<div>").append(
+            `<a href = ${data.friends[i].photo}>Photo</a>`
+          );
+          $(".modal-body").append(name);
+          $(".modal-body").append(photo);
+        }
       });
     });
   </script>

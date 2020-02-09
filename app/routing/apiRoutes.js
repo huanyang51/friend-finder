@@ -1,8 +1,5 @@
 var apiRouter = require("express").Router();
 var db = require("../data/friends");
-apiRouter.use(function(req, res, next) {
-  next();
-});
 
 apiRouter.get("/", (req, res) => {
   res.json(db.friends);
@@ -26,7 +23,6 @@ apiRouter.post("/", (req, res) => {
   difs.sort(function(a, b) {
     return a - b;
   });
-  console.log(difs);
   var min = difs[0];
   // get the person's info with the min differnce
   var matches = [];

@@ -3,7 +3,6 @@ var app = express();
 
 const morgan = require("morgan");
 var PORT = 8080;
-var { db } = require("./app/data/friends");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
